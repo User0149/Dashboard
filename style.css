@@ -31,7 +31,7 @@ body{
     padding: 3px;
     margin: 5px;
     text-align: center;
-    height: 21px;
+    height: 32px;
 }
 .header_hidden{
     animation-name: fade_out;
