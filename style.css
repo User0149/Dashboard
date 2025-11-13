@@ -6,10 +6,24 @@ body{
 }
 
 .button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-right: 5px;
+    
     cursor: pointer;
+    border-radius: 100vh;
+    border-color: gray;
 }
 #settings_button{
+    padding: 5px;
     padding-top: 3px;
+    
+    cursor: pointer;
+    border-radius: 100vh;
+    border-color: gray;
 }
 
 .header{

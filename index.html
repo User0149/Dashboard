@@ -21,10 +21,10 @@
             <button class='button' id="button8" style="display: none;"></button>
             <button class='button' id="button9" style="display: none;"></button>
             <button class='button' id="button10" style="display: none;"></button>
-            <div style="position: absolute; top: 3px; right: 0;">
+            <div style="display: flex; justify-items: center; align-items: center; position: absolute; top: 0px; right: 0;">
                 <!-- Settings -->
-                <button class='button center' id="settings_button" onclick="document.getElementById('settings').style.display='block';" style="float: right;">
-                    <img src="settings.svg" width="16px" height="16px"></img>
+                <button id="settings_button" onclick="document.getElementById('settings').style.display='block';" style="display: flex; justify-items: center; align-items: center;">
+                    <img src="settings.svg" width="16" height="16"/>
                 </button>
             </div>
         </header>
@@ -32,7 +32,7 @@
         <div id="settings" class="modal"> 
             <div id="settings_box" class="modal_box">
                 <span class="close" onclick="document.getElementById('settings').style.display='none'">&times;</span>
-                <h3>Settings (uses local browser storage, i.e., 'cookies')</h3>
+                <h3>Settings</h3>
                 <h4>Header Buttons</h4>
                 <form>
                     <input type="checkbox" id="site1_show" onclick="update_show('1',document.getElementById('site1_show').checked)">
