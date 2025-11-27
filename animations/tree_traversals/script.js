@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded",()=>{
                 let number=(1<<depth)-1+node;
                 let parent=Math.floor(number/2);
                 if(positions[parent][0]!=-1 && Math.random()<=Math.pow(0.5,1/tree_height)){
-                    let x=Math.min(Math.max(node*(canvas.width/(nodes_lvl+1)),radius+1),canvas.width-(radius+1));
+                    let x=Math.min(Math.max(node*(canvas.width/nodes_lvl) - canvas.width/(2*nodes_lvl),radius+1),canvas.width-(radius+1));
                     positions[number]=[x,y];
                     
                     if(number!=1){
                         ctx.beginPath();
-                        a=positions[number];
-                        b=positions[parent];
+                        let a=positions[number];
+                        let b=positions[parent];
                         ctx.moveTo(a[0],a[1]);
                         ctx.lineTo(b[0],b[1]);
                         ctx.stroke();
