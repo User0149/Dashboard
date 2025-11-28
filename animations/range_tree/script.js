@@ -55,12 +55,12 @@ function generate(){
         let y=radius+1+unit_y*depth;
 
         let n=(1<<depth); // nodes on level
-        let unit_x=canvas.width/(n+1); // fit nodes+1 spaces surrounding n nodes 
+        let unit_x=canvas.width/n; // space between nodes on this level 
 
         for(let j=1;j<=n;j++){
             let number=(1<<depth)-1+j;
             
-            let x=unit_x*j;
+            let x=unit_x*j - unit_x/2;
             pos[number]=[x,y];
             l[number]=1+32/(1<<depth)*(j-1);
             r[number]=32/(1<<depth)*j;
