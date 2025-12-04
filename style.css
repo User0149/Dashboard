@@ -61,16 +61,10 @@ body{
         opacity: 0.5;
     }
 }
-/* .header_german{
-    background-color: rgb(254,196,0);
-} */
+
 .embed{
-    text-align: center;
     margin: 0px;
     padding: 0px;
-
-    height: calc(100vh - 50px);
-    width: calc(100% - 30px);
 }
 .body{
     margin: 0px;
@@ -127,15 +121,9 @@ td,th{
     height: 20px;
 }
 #main_embed{
-    height: calc(100vh - 140px);
-    width: calc(100% - 30px);
-
-    display: inline-block; 
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: black;
-    margin: auto;
-    margin-top: 30px;
+    border: 1px solid gray;
+    
+    margin-top: 15px;
 }
 .height100{
     height: 100%;

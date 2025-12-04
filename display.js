@@ -1,11 +1,9 @@
 var toggle; 
-var on="dashboard";
-toggle=function toggle(id){
+var on="main";
+toggle=(id) => {
     if(on!=id){
-        if(on=="dashboard") hide_dashboard();
-        else document.getElementById(on).style.display="none";
+        document.getElementById(on).style.display="none";
+        document.getElementById(id).style.display="flex";
         on=id;
-        if(id=="dashboard") show_dashboard();
-        else document.getElementById(id).style.display="inline-block";
     }
 }

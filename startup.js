@@ -30,5 +30,3 @@ document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById("version").innerHTML=version
     document.getElementById("update_date").innerHTML=last_updated;
 })
-
-show_dashboard() // Shows dashboard on startup </script>
